@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tete+Lc</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presente Especial</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            background-color: #ff0066;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .heart {
+            font-size: 170px;
+            color: #ff0066;
+            margin: 20px 0;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .message {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            margin: 50px 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <button id="revealButton">Clique aqui</button>
+        <div id="surprise" class="hidden">
+            <div class="heart">❤️</div>
+            <div class="message">Para uma pessoa que em pouco tempo se tornou especial para mim! te dedicaria todas as musicas de amor porque vc mereçe todas, quero estar sempre ao seu ladooo <br><br>Tete + Lucas ❤️</div>
+        </div>
+    </div>
+
+    <script>
+        const button = document.getElementById('revealButton');
+        const surprise = document.getElementById('surprise');
+
+        button.addEventListener('click', () => {
+            surprise.classList.remove('hidden');
+            button.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
+
+</body>
+</html>
